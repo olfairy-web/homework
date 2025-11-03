@@ -1,0 +1,21 @@
+
+div{
+    background: #e1b1b1;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    max-width: 1500px;
+    max-height: 600px;
+    overflow: auto;
+}
+.block,
+.inline {
+    background: #d5c8d5;
+    display: inline-block;
+    border-radius: 30px;
+    box-shadow: inset 0px 0px 8px #000;
+    box-sizing: border-box;
+    padding: 30px;
+    margin: 10px;
+    max-width: 300px;
+    max-height: 250px;
+}
