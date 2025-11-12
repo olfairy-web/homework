@@ -1,0 +1,225 @@
+body {
+    background: #181E34;
+    font-family: "Montserrat", "Arial", sans-serif;
+    color: #ffffff;
+    line-height: 150%;
+}
+
+.container {
+    /* ограничиваем контейнер по ширине */
+    max-width: 930px;
+    /* добавляем по 15 пикс с каддой стороны чтобы общая ширина была 900 */
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 100%;
+}
+
+/* ======================================= */
+
+.header {
+    padding: 30px 0 36px;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav {
+    margin-left: auto;
+    /* чтобы меню отступало от картинки */
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-item {
+    margin-right: 30px;
+}
+
+.header-button {
+    color: #2766AE;
+    background: #ffffff;
+    border-radius: 100px;
+    padding: 14px 30px;
+    font-weight: 500;
+}
+
+/* HERO */
+.hero {
+    background: url("../img/bg-hero.jpg") 10% 50% / cover no-repeat;
+    padding: 120px;
+    /* делаем изображение на бэкграунд устанавливаем проценты чтобы картинка смотрелась хорошо когда сужвется страница ковер заполняет страницу, без повторов */
+    /* падинг задаем к главным элементам */
+}
+
+.hero-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    /* значения копируем из макета */
+    text-align: center;
+    /* выравнивание заголовка по центру */
+    margin-bottom: 60px;
+    /* отступ от заголовка до кнопки в макете внизу */
+}
+
+.hero-inner {
+    display: flex;
+    align-items: center;
+    /* выравнивание по вертикали */
+    justify-content: space-between;
+    /* эл прилегает к краям флексбокса */
+
+}
+
+.hero-text {
+    max-width: 436px;
+    /* проверяем жирность шрифта, у нас все ок */
+}
+
+.hero-text span {
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 20px;
+    color: rgba(1, 162, 203, 1);
+    /* обращаемся к спану внутри родителя див */
+}
+
+.par {
+    margin-bottom: 15px;
+    /* прописываетнижнний отступ отдельно для верхнего параграфа, чтобы на втором не появился ненужный отступ */
+}
+
+.hero-buttons {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+
+    /* у нас кнопка инлайновый элемент и чтобы он вел себя как блочный элемент отдельно прописываем ему флексбокс и выстраиваем в столбик  */
+}
+
+.hero-button-one,
+.hero-button-two {
+    /* чтобы указать стили для вдух эл сразу, если нужно, указываем их через запятую */
+    border-radius: 100px;
+    padding: 18px 30px 18px 30px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    /* чтобы кнопки растягивались как на макете прописываем их макс ширину и ширину в 100% к родительскому эл */
+}
+
+.hero-button-one img,
+.hero-button-two img {
+    /* обращаемся к изображению внутри кнопок */
+    margin-left: 4px;
+}
+
+.hero-button-one {
+    background: linear-gradient(180.00deg, rgba(0, 164, 204, 1), rgba(39, 102, 174, 1) 100%);
+}
+
+.hero-button-two {
+    background: linear-gradient(129.14deg, rgba(0, 164, 204, 1), rgba(39, 102, 174, 1) 100%);
+}
+
+.margin-bottom {
+    margin-bottom: 10px;
+    /* отступ от первой кнопки до второй */
+}
+
+/* Звголовки-карточки */
+
+.cards-title {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 49px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 15px;
+    margin-top: 120px;
+}
+
+.cards-text {
+    margin: 15px 193px 60px 193px;
+}
+
+.cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards-flex-item {
+    border: 2px solid rgba(23, 107, 174, 1);
+    border-radius: 16px;
+    box-shadow: 4px 4px 13px 0px rgba(5, 13, 41, 0.76);
+    background: rgba(25, 124, 184, 1);
+    max-width: 204px;
+    max-height: 141px;
+    margin-bottom: 28px;
+
+}
+
+.cards-flex-titel {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    text-transform: uppercase;
+    padding: 28px;
+    padding-bottom: 10px;
+}
+
+.cards-flex-text {
+    padding: 0px 30px 28px 30px;
+    text-align: center;
+}
+
+.cards-button {
+    margin: 0px 232px 120px;
+}
+
+/*  подвал */
+
+.footer {
+    border-top: 1px solid #324052;
+    padding: 60px 0px;
+}
+
+.footer-inner {
+    display: flex;
+}
+
+.footer-desc {
+    max-width: 267px;
+    margin-right: auto;
+}
+
+.footer-desc a {
+    display: inline-block;
+    margin-bottom: 15px;
+
+}
+
+.footer-col {
+    max-width: 204px;
+    width: 100%;
+}
+
+.footer-title {
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 27px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.footer-item {
+    margin-bottom: 10px;
+}
