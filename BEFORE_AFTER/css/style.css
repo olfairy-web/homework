@@ -1,0 +1,37 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 5rem;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    padding:20px 50px;
+    text-align: center;
+}
+
+.title::before 
+{
+    content: '';
+    background: #9c55ad;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    position: absolute;
+    transform: translate(-280%,-10%);
+}
+
+.title::after {
+    content: '';
+    background: #5855ad;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    border: 5px solid white;
+    position: absolute;
+    transform: translate(280%,-10%);
+}

@@ -1,0 +1,36 @@
+body {
+    background: #484747;
+}
+
+
+.text {
+    color: rgb(196, 201, 205);
+    
+    
+} 
+
+.element{
+    display: flex;
+    margin-right: 50px;
+    justify-content: flex-end;
+}
+.element__white {
+    background: #f7f1f1;
+    border-radius: 5px;
+    position: fixed;
+    bottom: 100px;
+    /* left: 50%; */
+    width: 50%;
+    height: 100px;
+}
+
+.element__red {
+    background-color: #d40e0e;
+    position: absolute;
+    margin-top: -50px;
+    margin-left: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    
+}
