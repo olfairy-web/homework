@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #9e52995f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Playwrite NO';
+  font-weight: 100;
+  min-height: 100vh;
+}
+
+.form {
+  border: 1px solid #333;
+  background-color: #9e52995c;
+  border-radius: 60px;
+  max-width: 700px;
+  width: 100%;
+  /* растягиыаем форму на всю ширинк так как из за флекс бокса она не будет растягиветься на всю ширину без этого значенния*/
+  padding: 30px;
+}
+
+.login-ikon {
+  background-color: #9e5299;
+  border-radius: 50px;
+  width: 50%;
+  cursor: pointer;
+  transition: background-color 0.5s;
+}
+
+.login-ikon:hover {
+  background-color: transparent;
+  color: #813f76e9;
+  opacity: 0.85;
+}
+
+.login-ikon-titlte {
+  display: flex;
+  align-items: center;
+}
+
+.form-group {
+  border: none;
+  padding: 0;
+}
+
+.form-group-title {
+  color: #fff;
+  font-weight: 500;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.label {
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.textarea {
+  max-height: 150px;
+  min-height: 30px;
+  resize: vertical;
+}
+
+.input,
+.textarea {
+  border: 1px solid #333;
+  border-radius: 15px;
+  width: 100%;
+  /* 100% ширина позволяет растяшиваться окнам на всю ширину родителя и сжимвться когда страница уменьшается */
+  padding: 15px 10px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.input:disabled,
+.textarea:disabled {
+  opacity: 0.7;
+}
+
+.checkbox {
+  position: absolute;
+  appearance: none;
+  outline: none;
+  /* скрытыц чек бокс */
+}
+
+.checkbox-label {
+  padding-left: 22px;
+}
+
+.checkbox::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  margin-left: -22px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.checkbox:checked::after  {
+  background: url(../img/check-icon.svg) no-repeat center, #9e5299;
+}
+.checkbox-text {
+  font-size: 14px;
+}
+.button {
+  padding: 10px 50px;
+  background-color: #813f76e9;
+  color: #fff;
+  border-radius: 20px;
+  border: 1px solid #813f766b;
+  outline: none;
+  cursor: pointer;
+  transition: background-color 0.5s, padding 0.5s;
+}
+
+.button:hover {
+  padding: 10px 100px;
+  background-color: transparent;
+  color: #813f76e9;
+  opacity: 0.85;
+
+}
+
+.button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.input:focus-visible,
+.textarea:focus-visible,
+.button:focus-visible,
+.checkbox:focus-visible::after {
+  outline: 2px solid #9e5299;
+  outline-offset: 1px;
+}
