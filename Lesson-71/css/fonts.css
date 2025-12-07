@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Playwrite NO';
+    src:
+        local('PlaywriteNO-Thin'),
+        local('PlaywriteNO-Thin'),
+        url('../fonts/PlaywriteNO-Thin.woff2') format('woff2'),
+        url('../fonts/PlaywriteNO-Thin.woff') format('woff');
+    /* подключаем путь '../' */
+    font-weight: 100;
+    /* та жирность которую. нам нужно подключить */
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Playwrite NO';
+    src:
+        local('PlaywriteNO-Thin'),
+        local('PlaywriteNO-Thin'),
+        url('../fonts/PlaywriteNO-ExtraLight.woff2') format('woff2'),
+        url('../fonts/PlaywriteNO-ExtraLight.woff') format('woff');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
