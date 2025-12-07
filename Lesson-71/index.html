@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Forms</title>
+
+  <link rel="stylesheet" href="./css/reset.css" />
+  <link rel="stylesheet" href="./css/fonts.css">
+  <link rel="stylesheet" href="./css/style.css"/>
+</head>
+
+<body>
+  <form class="form">
+
+    <fieldset class="form-group">
+      <div class="login-ikon login-ikon-titlte">
+        <img src="./img/login-w-icon.png" width="100px" height="100px"></img>
+        <legend class="form-group-title">Log in</legend>
+      </div>
+
+      <label for="name" class="label">User name</label>
+      <input id="name" class="input" type="text" placeholder="User name" name="name" required />
+      <label for="password" class="label">Password</label>
+      <input id="password" class="input" type="password" placeholder="Password" name="password" required />
+      <label for="email" class="label">Email</label>
+      <input id="email" class="input" type="email" placeholder="Email" name="email" required />
+    </fieldset>
+    <fieldset class="form-group">
+      <label for="message" class="label">Massage</label>
+      <textarea id="message" class="textarea" placeholder="massage" name="message" required></textarea>
+      <label class="label checkbox-label">
+        <input class="checkbox" type="checkbox" name="checkbox" required />
+        <span class="checkbox-text">Remember me</span>
+      </label>
+    </fieldset>
+    <button class="button">Sign in</button>
+  </form>
+</body>
+
+</html>
