@@ -1,0 +1,160 @@
+.hero {
+    position: relative;
+    padding-top: 80px;
+}
+
+.hero::after {
+    position: absolute;
+    z-index: -1;
+    bottom: 106px;
+    content: "";
+    background: url("../img/decor-lage-ikon.svg");
+    width: 100%;
+    /* на всю ширину */
+    height: 48px;
+}
+
+.hero_container {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.hero__section--one {}
+
+.hero__title {
+    padding-bottom: 40px;
+    font-family: "Oswald", sans-serif;
+    font-weight: 600;
+    font-size: 62px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+}
+
+.hero h1 strong {
+    font-weight: 600;
+    color: #3596ed;
+}
+
+.hero__text {
+    margin-bottom: 140px;
+    color: #535755;
+    max-width: 440px;
+}
+
+.hero__button {
+    display: inline-block;
+    padding: 19px 32px;
+    width: 270px;
+    height: 57px;
+    background-color: #3596ed;
+
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 130%;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    text-align: center;
+    color: #fff;
+    transition: opacity 0.2s;
+}
+
+.hero__button:hover {
+    opacity: 0.8;
+}
+
+.hero__section--two {
+    display: flex;
+    position: relative;
+}
+
+.hero--decoration {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #2c332f;
+    border: 1px solid #535755;
+    padding: 22px;
+    max-width: 161px;
+    text-align: center;
+
+    background: rgba(255, 255, 255, 0.9);
+
+}
+
+/* ------------------------- */
+
+.news {}
+
+.section {}
+
+.container {}
+
+.title-large {}
+
+.news__article__container {
+    display: flex;
+    gap: 28px;
+}
+
+.news__article {
+    display: flex;
+    flex-direction: column;
+    /* чтобы можно было добавить больше текста и ссылка подробнее оставалась внизу */
+
+    border: 1px solid #d3cbd9;
+    background-color: #fff;
+    max-width: 284px;
+    overflow: hidden;
+}
+
+.news__article img {
+    display: block;
+}
+
+.news__article--info {
+    padding: 20px 20px 0;
+    margin-bottom: 12px;
+}
+
+.news__article--info h3 {
+    color: #2c332f;
+}
+
+.news-date {
+    display: inline-block;
+    margin-bottom: 8px;
+}
+
+.news__article footer {
+    padding: 0 20px 20px;
+
+    margin-top: auto;
+    /* тоже чтобы при увеличпнии текста ссылки оставались ровненьуо и внизу */
+}
+
+.news-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #3596ed;
+}
+
+.news-link::after {
+    display: inline-block;
+    content: "";
+    width: 22px;
+    height: 9px;
+    padding-left: 8px;
+    background-image: url("../img/arrow-right.svg");
+    transition: transform 0.3s;
+}
+
+.news-link:hover::after {
+    transform: translateX(10px);
+}
