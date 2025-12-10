@@ -1,0 +1,102 @@
+html {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* такой связкой футер прижимается к ниж краю */
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* учет падингов и бордеров */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    outline: none;
+}
+
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+.title-large {
+    max-width: 596px;
+    margin-bottom: 40px;
+    color: #2c332f;
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 115%;
+    text-transform: uppercase;
+
+}
+
+.text-sub {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #858e8a;
+}
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 1px;
+}
+
+/* фокусировка таба на кнопках и ссылках */
+
+.title-small {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+
+    border-top: 1px solid #d3cbd9;
+    padding: 20px 0 20px 20px;
+    max-width: 700px;
+    
+}
+
