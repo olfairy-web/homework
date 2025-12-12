@@ -1,0 +1,166 @@
+html {
+    font-family: Ubuntu, sans-serif;
+    font-weight: 400;
+}
+
+body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    min-height: 100vh;
+    /* такой связкой футер прижимается к ниж краю */
+    min-width: 375px;
+    /* чтобы дойдя на самого маленького жкрана верстка 
+    станрвилась статичной и не ломаоаст */
+}
+
+*,
+*::before,
+*::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+/* учет падингов и бордеров */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+a,
+button {
+    outline: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+       object-fit: cover;
+}
+
+
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: #535755;
+
+}
+
+.section {
+    margin-bottom: 140px;
+}
+
+.title-large {
+    max-width: 596px;
+    margin-bottom: 40px;
+    color: #2c332f;
+    font-family: Oswald;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 115%;
+    text-transform: uppercase;
+
+}
+
+.text-sub {
+    font-weight: 300;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #858e8a;
+}
+
+.decor::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    background: url("../img/decor-lage-ikon.svg");
+    width: 40%;
+    /*ширину делаем менше */
+    height: 48px;
+}
+
+
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+    outline: 2px solid #3596ed;
+    outline-offset: 1px;
+}
+
+/* фокусировка таба на кнопках и ссылках */
+
+.title-small {
+    font-family: Oswald;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 115%;
+    text-transform: uppercase;
+    color: #2c332f;
+
+    border-top: 1px solid #d3cbd9;
+    padding: 20px 0 20px 20px;
+    max-width: 700px;
+
+}
+
+@media (width<=992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+/* уменьшаем ширину общего контейнера чтоьы контент внутри
+смотрелся нормально */
+
+@media (width<=768px) {
+    .container {
+        max-width: 576px;
+    }
+    .title-large {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    .home-page .title-large {
+        text-align: center;
+        max-width: inherit;
+    }
+    .title-small{
+        font-size: 22px;
+    }
+}
+
+@media (width<=576px) {
+    .section {
+        margin-bottom: 80px;
+    }
+    .title-large {
+        font-size: 34px;
+    }
+    .title-small{
+        font-size: 18px;
+    }
+}
