@@ -1,0 +1,30 @@
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #d3cbd9;
+    gap: 10px;
+}
+
+.header__info {
+
+    text-align: right;
+
+}
+.header__text{
+    margin-bottom: 8px;
+}
+
+.header__tel {
+
+    font-weight: 500;
+    font-size: 18px;
+    color: #2c332f;
+    transition: color 0.2s;
+}
+
+.header__tel:hover {
+    color: #3596ed;
+}
