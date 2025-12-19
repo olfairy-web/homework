@@ -1,0 +1,33 @@
+.page {
+    font-family: var(--font-family);
+    font-weight: 400;
+    color: var(--main-color);
+}
+
+.page__body {
+    min-width: 375px;
+    min-height: 200vh;
+    /* появляется скрол */
+    background-color: var(--bg-color);
+}
+.page__body--no-scroll{
+    overflow-y: hidden;
+    /* убираем прокрутку у стр когда бургер открыт */
+}
+
+
+.container {
+    width: min(var(--container-width), 100% - var(--container-padding) * 2);
+    /* гибкий контейнер */
+    margin-inline: auto;
+    /* делает бордеды справа и слева  */
+
+}
+
+a:focus-visible,
+button:focus-visible {
+    outline: 1px solid var(--accent-color);
+    outline-offset: 1px;
+ 
+
+}
