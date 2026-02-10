@@ -1,0 +1,175 @@
+.hero {
+    position: relative;
+
+    background-image: url(../../img/hero-bg.jpg);
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    max-height: 850px;
+
+}
+
+.hero__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: clamp(24.5rem, 17.203rem + 29.93vw, 53.125rem);
+    padding-top: clamp(47px, 2.252rem + 2.81vw, 90px);
+}
+
+.hero__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
+
+    margin-left: clamp(5px, -3.83rem + 16.99vw, 265px);
+    z-index: 1;
+}
+
+@media (width<=568px) {
+    .hero__description {}
+}
+
+
+.hero__title {
+    line-height: 103%;
+    width: 556px;
+    ;
+}
+
+@media (width<=1420px) {
+    .hero__title {
+        width: 556px;
+        position: absolute;
+        top: 170px;
+    }
+}
+
+@media (width<=1200px) {
+    .hero__title {
+        font-size: 38px;
+        width: 460px;
+    }
+}
+
+@media (width<=992px) {
+    .hero__title {
+        font-size: 30px;
+        top: 156px;
+        width: 363px;
+    }
+}
+
+@media (width<=762px) {
+    .hero__title {
+        top: 130px;
+        font-size: 28px;
+    }
+}
+
+@media (width<=568px) {
+    .hero__title {
+        font-size: 24px;
+        top: 115px;
+        width: 290px;
+    }
+}
+
+.hero__text {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 130%;
+    color: var(--main-color-2);
+    margin-top: 40px;
+    margin-bottom: clamp(30px, 0.919rem + 3.92vw, 90px);
+    min-width: clamp(18.125rem, 13.887rem + 17.39vw, 34.75rem);
+}
+
+@media (width<=1200px) {
+    .hero__text {
+        font-size: 18px;
+    }
+}
+
+@media (width<=992px) {
+    .hero__text {
+        font-size: 16px;
+        margin-bottom: 40px;
+    }
+
+}
+
+@media (width<=768px) {
+    .hero__text {
+        margin-top: 20px;
+        min-width: 253px;
+    }
+
+}
+
+@media (width<=390px) {
+    .hero__text {
+        font-size: 12px;
+        margin-top: 16px;
+        margin-bottom: 30px;
+        min-width: 170px;
+    }
+
+}
+
+.hero__button {
+    display: inline-block;
+    padding: 15.5px 51.5px;
+    border-radius: 3px;
+    cursor: pointer;
+    background-color: var(--accent-color);
+    transition: color var(--transition-time), background-color var(--transition-time);
+}
+
+.hero__link {
+    color: var(--main-color);
+}
+
+@media (width<=992px) {
+    .hero__button {
+        font-size: 16px;
+        padding: 7px 26.5px;
+    }
+
+    .hero__link {
+        font-size: 16px;
+    }
+}
+
+@media (any-hover: hover) {
+    .hero__button:hover {
+        background-color: var(--main-color-2);
+        color: var(--accent-color);
+    }
+}
+
+.hero-img-wrapper {
+    align-self: flex-end;
+    flex-grow: 1;
+}
+
+.hero__img {
+    margin-top: auto; 
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+@media (width<=568px) {
+    .hero-img-wrapper {
+        transform: scale(1.8);
+    }
+}
+
+@media (width<=390px) {
+    .hero-img-wrapper {
+        transform: scale(2);
+    }
+}

@@ -1,0 +1,26 @@
+/* colors */
+:root {
+
+	--main-color: #fff;
+	--main-color-2: #111;
+	
+	--accent-color: #c5358c;
+	--bg-color: #f8f8f8;
+	--second-color: #ababab;
+	--second-color-2: #909090;;
+	
+
+
+	/* container */
+	--container-width: 1920px;
+	--container-padding: 15px;
+
+	/* transitions */
+	--transition-time: 0.3s;
+
+}
+
+:root {
+	--font-family: "Open Sans", sans-serif;
+	--second-family: "NAMU", sans-serif;
+}
